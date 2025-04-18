@@ -1,0 +1,251 @@
+:root {
+    --background-color: #444444;
+    --background-color-2: #f5f2d0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: var(--background-color-2);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid #000000;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.bio {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.social-link i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* .website {
+    background-color: #6c5ce7;
+    color: white;
+} */
+
+.portfolio {
+    background-color: #00b894;
+    color: white;
+}
+
+.instagram {
+    background-color: #4d4688;
+    color: white;
+}
+
+.tiktok {
+    background-color: #000000;
+    color: white;
+}
+
+.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.github {
+    background-color: #333;
+    color: white;
+}
+
+.social-link:hover {
+    transform: translateY(-1px);
+    border: solid 4px #e47e00;
+}
+
+.name {
+    color: #e47e00;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+
+@media (min-width: 480px) {
+    .container {
+        padding: 25px;
+    }
+    
+    .profile-pic {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .username {
+        font-size: 22px;
+    }
+    
+    .bio {
+        font-size: 15px;
+    }
+    
+    .social-link {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 450px;
+        padding: 30px;
+    }
+    
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    
+    .username {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .bio {
+        font-size: 16px;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    
+    .social-links {
+        gap: 15px;
+    }
+    
+    .social-link {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    
+    .social-link i {
+        font-size: 20px;
+    }
+    
+    .name {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 500px;
+    }
+    
+    .profile-pic {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .username {
+        font-size: 26px;
+    }
+    
+    .bio {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 550px;
+        padding: 35px;
+    }
+    
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+        border-width: 4px;
+    }
+    
+    .username {
+        font-size: 28px;
+    }
+    
+    .bio {
+        font-size: 18px;
+    }
+    
+    .social-link {
+        padding: 14px 22px;
+        font-size: 17px;
+    }
+    
+    .name {
+        font-size: 26px;
+    }
+}
+
+/* Telas muito grandes (acima de 1600px) */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 600px;
+    }
+    
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .social-link {
+        padding: 15px 25px;
+    }
+}
